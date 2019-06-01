@@ -19,14 +19,14 @@ func main() {
 	cfg := config.Config{
 		DATABASE: []config.Database{
 			{
-				HOST:         database.HOST,
-				PORT:         database.PORT,
-				USER:         database.USER,
-				PWD:          database.PWD,
-				NAME:         database.NAME,
-				MAX_IDLE_CON: database.MAX_IDLE_CON,
-				MAX_OPEN_CON: database.MAX_OPEN_CON,
-				DRIVER:       database.DRIVER,
+				HOST:         "127.0.0.1",
+				PORT:         "3306",
+				USER:         "root",
+				PWD:          "0000",
+				NAME:         "godmin",
+				MAX_IDLE_CON: 50,
+				MAX_OPEN_CON: 150,
+				DRIVER:       "mysql",
 			},
 		},
 		DOMAIN: "demo.go-admin.cn",
